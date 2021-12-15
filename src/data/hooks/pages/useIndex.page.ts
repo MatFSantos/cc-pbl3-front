@@ -1,7 +1,6 @@
 import { TripInterface } from 'data/@types/tripInterface';
 import { useState } from 'react';
 import { ApiService } from '@services/ApiService';
-import { PathInterface } from 'data/@types/pathInterface';
 
 var addrA = 'http://26.183.229.122:52000/';
 var addrB = 'http://26.183.229.122:53000/';

@@ -1,34 +1,24 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Informações de instalação e uso
 
-## Getting Started
+Esse *READ ME* informa o que deve ser usado e como deve ser usado para quê a aplicação interface funcione corretamente.
 
-First, run the development server:
+### Dependências da interface
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+A interface foi construída com ***Javascript***, utilizando o *framework* *front-end* ***React.js***. Logo, antes de tudo é necessário ter o ***Node.js*** na versão 14.17.6 (versão utilizada), *software* que permite a execução de códigos ***javascript*** fora do *browser* (navegador web). Com o ***Node.js*** você poderá fazer a instalação das dependências da interface.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Após instalar o  ***Node.js*** e baixar o repositório, execute o comando ``npm i`` ou ``npm install`` na pasta raiz do projeto e espere o processo terminar. Após isso suas dependências foram instaladas.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+### Rodando a interface
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+Após todas as dependências instaladas, é a hora de rodar a interface. Para isso, na pasta raiz execute os comandos: 
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+``npm run build`` e ``npm run start``
 
-## Learn More
+O primeiro monta os arquivos da interface, já o segundo executa o servidor e inicia a interface. Por fim, é só abrir o *front-end* no seu *browser*, no endereço local, na porta 3000 (porta padrão) ``localhost:3000``.
 
-To learn more about Next.js, take a look at the following resources:
+#### adendo
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+É importante informar que, caso o endereço da *API* seja alterado, basta acessar o arquivo ``/src/data/hooks/pages/useIndex.page.ts`` e alterar os endereços das companhias no inicio do arquivo.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+ Após isso basta refazer os passos da sessão anterior
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
