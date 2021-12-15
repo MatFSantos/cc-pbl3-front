@@ -173,7 +173,7 @@ export default function Home() {
               <ContentModal>
                 {tripSelectedInfo
                   ? tripSelectedInfo.path.map((route, index) => (
-                      <ContentRoute>
+                      <ContentRoute key={index}>
                         <p>Rota: {index + 1}</p>
                         <p>
                           {route.origin}

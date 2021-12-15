@@ -3,8 +3,8 @@ import { useState } from 'react';
 import { ApiService } from '@services/ApiService';
 
 var addrA = 'http://26.183.229.122:52000/';
-var addrB = 'http://26.183.229.122:53000/';
-var addrC = 'http://26.183.229.122:54000/';
+var addrB = 'http://26.90.73.25:53000/';
+var addrC = 'http://26.90.73.25:54000/';
 
 export default function useIndex() {
   const [company, setCompany] = useState(''),
